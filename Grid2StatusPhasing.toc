@@ -1,6 +1,8 @@
 ## Interface: 90001
 ## Title: Grid2 |cd1ff7d0aStatusPhasing|r
 ## Notes: Adds phasing status to Grid2
+## X-Curse-Project-ID: 319201
+## X-WoWI-ID: 24903
 
 ## Dependencies: Grid2
 
