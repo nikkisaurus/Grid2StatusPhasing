@@ -1,0 +1,7 @@
+## Interface: 90001
+## Title: Grid2 |cd1ff7d0aStatusPhasing|r
+## Notes: Adds phasing status to Grid2
+
+## Dependencies: Grid2
+
+Core.lua
