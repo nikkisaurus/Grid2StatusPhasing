@@ -9,7 +9,7 @@ function f:Update()
 		if unit == "player" then
 			cache[unit] = false
 		else
-			cache[unit] = not UnitInPhase(unit) or UnitIsWarModePhased(unit)
+			cache[unit] = UnitPhaseReason and UnitPhaseReason(unit) or (UnitInPhase and (not UnitInPhase(unit) or UnitIsWarModePhased(unit)))
 		end
 
 		Phasing:UpdateIndicators(unit)
@@ -40,7 +40,7 @@ end
 
 function Phasing:GetIcon()
 	return "Interface\\TARGETINGFRAME\\UI-PhasingIcon"
-end 
+end
 
 Phasing.GetColor = Grid2.statusLibrary.GetColor
 
